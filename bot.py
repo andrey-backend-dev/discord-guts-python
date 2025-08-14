@@ -87,7 +87,7 @@ def _summarize_with_gigachat(transcript: str) -> str:
             credentials=GIGACHAT_CREDENTIALS, 
             scope=GIGACHAT_SCOPE,
             ca_bundle_file=GIGACHAT_CERT_PATH,
-            model='GigaChat-Pro'
+            model='GigaChat-2-Pro'
         )
         resp = giga.invoke(prompt)
         return resp.content
